@@ -1,0 +1,26 @@
+# Personal planning notes stay on this machine
+AI_ML_Industry_Transition_Plan_2026.md
+
+# Secrets
+.env
+.env.*
+
+# Python environments and caches
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Model weights and large local artifacts
+*.pt
+*.pth
+*.onnx
+*.tflite
+*.npy
+*.npz
+experiments/outputs/
+
+# OS
+.DS_Store
