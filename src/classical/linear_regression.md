@@ -27,9 +27,9 @@ A square \(w\) with shape \((d, d)\) is a legal matrix product with \(X\), but t
 
 Mean squared error:
 
-**
+$$
 L = \frac{1}{n}\sum_{i=1}^{n}(\hat{y}_i - y_i)^2
-**
+$$
 
 The factor \(1/n\) keeps the loss from growing just because there are more samples.
 
