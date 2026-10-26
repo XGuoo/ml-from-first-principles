@@ -4,7 +4,7 @@ import numpy as np
 x = np.random.random(size=(10, 10))
 w = np.random.random(size=(10, 1))
 b = np.random.random(size=(10, 1))
-noise = np.random.random(size=(10, 10))
+noise = np.random.random(size=(10, 1))
 
 def predict(x, w, b):
     return x * w + b
@@ -20,6 +20,6 @@ def gradients(x, y, y_hat):
     dl_dy = 2 * (y_hat-y) / len(y)
     dl_dw = x.T @ dl_dy
     db = np.sum(dl_dy)
-    return dl_dw, db
+    return db
 
 print(gradients(x, y, y_hat))
